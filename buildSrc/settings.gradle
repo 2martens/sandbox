@@ -1,4 +1,4 @@
-rootProject.name = 'config'
+rootProject.name = 'twomartens.config'
 
 dependencyResolutionManagement {
     versionCatalogs {
