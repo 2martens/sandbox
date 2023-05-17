@@ -2,7 +2,9 @@ package de.twomartens.sandbox.enums.model;
 
 import java.util.Collection;
 import java.util.List;
+import lombok.Getter;
 
+@Getter
 public enum TestEnum implements AscEnum {
   SOMETHING("SOMETHING"),
   OTHER("OTHER");
@@ -11,9 +13,5 @@ public enum TestEnum implements AscEnum {
 
   TestEnum(String... ascString) {
     this.ascStrings = List.of(ascString);
-  }
-
-  public Collection<String> getAscStrings() {
-    return this.ascStrings;
   }
 }
