@@ -1,0 +1,59 @@
+[versions]
+spring-boot = "3.0.5"
+slf4j = "2.0.7"
+log4j = "2.20.0"
+log4j-ecs = "1.5.0"
+mapstruct = "1.5.3.Final"
+junit = "5.9.2"
+assertj = "3.24.2"
+mockito = "5.3.0"
+plugin-lombok = "8.0.1"
+plugin-gradle-versions = "0.46.0"
+plugin-version-catalog = "0.8.0"
+
+[libraries]
+spring-boot = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter" }
+spring-boot-log4j = { module = "org.springframework.boot:spring-boot-starter-log4j2" }
+spring-boot-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+spring-boot-config = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "spring-boot" }
+mapstruct-base = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+log4j-ecs = { module = "co.elastic.logging:log4j2-ecs-layout", version.ref = "log4j-ecs" }
+log4j-api = { module = "org.apache.logging.log4j:log4j-api", version.ref = "log4j" }
+log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
+log4j-jul = { module = "org.apache.logging.log4j:log4j-jul", version.ref = "log4j" }
+log4j-slf4j = { module = "org.apache.logging.log4j:log4j-slf4j2-impl", version.ref = "log4j" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+assertj = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-inline = "org.mockito:mockito-inline:5.2.0"
+mockito-junit = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito" }
+plugin-springboot = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "spring-boot" }
+plugin-lombok = { module = "io.freefair.gradle:lombok-plugin", version.ref = "plugin-lombok" }
+plugin-gradle-versions = { module = "com.github.ben-manes:gradle-versions-plugin", version.ref = "plugin-gradle-versions" }
+plugin-version-catalog = { module = "nl.littlerobots.vcu:plugin", version.ref = "plugin-version-catalog" }
+
+[bundles]
+logging = [
+    "log4j-api",
+    "log4j-core",
+    "log4j-ecs",
+    "log4j-jul",
+    "log4j-slf4j",
+    "slf4j-api",
+]
+spring-boot = [
+    "spring-boot-starter",
+    "spring-boot-log4j",
+]
+test = [
+    "assertj",
+    "junit-jupiter",
+    "junit-jupiter-api",
+    "mockito-core",
+    "mockito-inline",
+    "mockito-junit",
+]

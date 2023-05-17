@@ -1,0 +1,8 @@
+rootProject.name = projectname
+
+include 'enum'
+
+rootProject.children.each { subproject ->
+    subproject.projectDir = file("module-" + subproject.name)
+    subproject.buildFileName = "${subproject.name}.gradle"
+}
