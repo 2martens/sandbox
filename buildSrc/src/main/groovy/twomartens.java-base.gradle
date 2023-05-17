@@ -11,7 +11,7 @@ repositories {
     mavenCentral()
 }
 
-task buildAll() {
+tasks.register('buildAll') {
     group 'build'
     dependsOn(build)
     dependsOn(test)
