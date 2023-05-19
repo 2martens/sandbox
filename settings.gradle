@@ -2,6 +2,7 @@ rootProject.name = projectname
 
 include 'enum'
 include 'sealed'
+include 'kata'
 
 rootProject.children.each { subproject ->
     subproject.projectDir = file("module-" + subproject.name)
