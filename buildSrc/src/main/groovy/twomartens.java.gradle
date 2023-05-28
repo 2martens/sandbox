@@ -4,7 +4,6 @@ plugins {
     id 'jacoco'
     id 'io.freefair.lombok'
     id 'twomartens.java-base'
-    id 'twomartens.checkstyle'
 }
 
 dependencies {

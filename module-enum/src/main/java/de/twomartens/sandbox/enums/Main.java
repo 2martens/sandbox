@@ -5,7 +5,9 @@ import de.twomartens.sandbox.enums.model.OtherEnum;
 import de.twomartens.sandbox.enums.model.TestEnum;
 import java.util.Arrays;
 import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class Main {
   public static void main(String[] args) {
     List<Task<Store, ?>> tasks = List.of(
@@ -19,9 +21,9 @@ public class Main {
       Task<Store, ?> task = tasks.get(index);
       store(task, column, store);
     }
-    System.out.println("SOMETHING == de.twomartens.sandbox.enums.model.TestEnum.SOMETHING: "
+    log.info("SOMETHING == de.twomartens.sandbox.enums.model.TestEnum.SOMETHING: "
         + (store.getTest() == TestEnum.SOMETHING));
-    System.out.println("bull == de.twomartens.sandbox.enums.model.OtherEnum.BULL: "
+    log.info("bull == de.twomartens.sandbox.enums.model.OtherEnum.BULL: "
         + (store.getOther() == OtherEnum.BULL));
   }
 
