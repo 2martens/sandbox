@@ -6,6 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class FindOdd {
+
   public static int findIt(int[] a) {
     Map<Integer, Long> numbers = Arrays.stream(a)
         .boxed()

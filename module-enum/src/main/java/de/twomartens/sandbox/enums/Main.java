@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class Main {
+
   public static void main(String[] args) {
     List<Task<Store, ?>> tasks = List.of(
         new Task<>(Store::setTest, column -> parse(column, TestEnum.class)),

@@ -3,7 +3,7 @@
   <Appenders>
     <Console name="console" target="SYSTEM_OUT">
       <PatternLayout alwaysWriteExceptions="true"
-                     pattern="%5p %d{HH:mm:ss.SSS} (%F:%L) %notEmpty{[%X{REQTYPE}] }%notEmpty{[%marker] }%K{event.end}%m%n%xEx{full}"/>
+        pattern="%5p %d{HH:mm:ss.SSS} (%F:%L) %notEmpty{[%X{REQTYPE}] }%notEmpty{[%marker] }%K{event.end}%m%n%xEx{full}"/>
     </Console>
   </Appenders>
   <Loggers>

@@ -8,6 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Store {
+
   private TestEnum test;
   private OtherEnum other;
 }

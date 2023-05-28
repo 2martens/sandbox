@@ -7,6 +7,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 class RentalFeeTest {
+
   @ParameterizedTest
   @MethodSource("getValues")
   void shouldReturn500InFirstWeek(int days, int expectedPrice) {

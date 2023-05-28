@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.List;
 
 public class Tool {
+
   public static String disemvowel(String str) {
     Collection<Character> vowels = List.of('a', 'e', 'i', 'o', 'u');
     StringBuilder builder = new StringBuilder();

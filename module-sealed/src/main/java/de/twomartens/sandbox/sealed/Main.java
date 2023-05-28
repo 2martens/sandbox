@@ -4,9 +4,11 @@ import java.util.Collection;
 import java.util.List;
 
 public class Main {
+
   private int mailCounter = 0;
   private int phoneCounter = 0;
   private int emailCounter = 0;
+
   public static void main(String[] args) {
     Collection<ContactMethod> contactMethods = List.of(
         new Phone("+49 123 456789"),
@@ -19,7 +21,7 @@ public class Main {
     contactMethods.forEach(contactMethod -> main.send(contactMethod, "Hello World!"));
     contactMethods.forEach(contactMethod -> main.send(contactMethod, "Doomsday!"));
     System.out.println("Sent " + main.mailCounter + " mails, " + main.phoneCounter
-                           + " SMS and " + main.emailCounter + " emails.");
+        + " SMS and " + main.emailCounter + " emails.");
   }
 
   private void send(ContactMethod contactMethod, String message) {

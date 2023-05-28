@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @ToString(onlyExplicitlyIncluded = true)
 final class Node {
+
   @ToString.Include
   String value;
   List<Node> edges = new ArrayList<>();

@@ -4,7 +4,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 public class Properties {
-  @Getter @Setter
+
+  @Getter
+  @Setter
   private String property = "hallo";
 
   public static void main(String[] arguments) {
