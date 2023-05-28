@@ -9,6 +9,7 @@ repositories {
 dependencies {
     implementation libs.plugin.springboot
     implementation libs.plugin.lombok
+    implementation libs.plugin.nebula.release
     implementation libs.plugin.gradle.versions
     implementation libs.plugin.version.catalog
 }
