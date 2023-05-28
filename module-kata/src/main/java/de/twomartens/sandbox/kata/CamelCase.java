@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class CamelCase {
 
-  public static String toCamelCase(String s){
+  public static String toCamelCase(String s) {
     String[] words = s.split("[_-]");
     String firstWord = words[0];
     String upperCase = Arrays.stream(words)
